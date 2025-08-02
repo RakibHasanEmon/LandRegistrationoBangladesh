@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="lawyer.LegalVerificationController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    
+    <Label text="LegalVerification" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <Button text="Access Legal Registry" fx:id="btnEvent1"/>
+    <Button text="Check for Disputes" fx:id="btnEvent2"/>
+    <Button text="Confirm Clearance Certificate" fx:id="btnEvent3"/>
+    <Button text="Issue Legal Clearance" fx:id="btnEvent4"/>
+    <Button text="Share Clearance with Broker/Client" fx:id="btnEvent5"/>
+</VBox>
