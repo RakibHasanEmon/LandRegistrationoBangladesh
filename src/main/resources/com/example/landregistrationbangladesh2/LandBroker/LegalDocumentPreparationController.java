@@ -25,7 +25,7 @@ public class LegalDocumentPreparationController {
     }
 
     private void handleEvent1() {
-        System.out.println("Receive Buyer &amp; Seller Info triggered.");
+        System.out.println("Receive Buyer & Seller Info triggered.");
     }
 
     private void handleEvent2() {

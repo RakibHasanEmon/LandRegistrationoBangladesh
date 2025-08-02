@@ -3,7 +3,7 @@ package lawyer;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class LegalDocumentPreparationController {
+public class LegalAdviceController {
     @FXML
     private Button btnEvent1;
     @FXML
@@ -12,8 +12,6 @@ public class LegalDocumentPreparationController {
     private Button btnEvent3;
     @FXML
     private Button btnEvent4;
-    @FXML
-    private Button btnEvent5;
 
     @FXML
     public void initialize() {
@@ -21,27 +19,22 @@ public class LegalDocumentPreparationController {
         btnEvent2.setOnAction(e -> handleEvent2());
         btnEvent3.setOnAction(e -> handleEvent3());
         btnEvent4.setOnAction(e -> handleEvent4());
-        btnEvent5.setOnAction(e -> handleEvent5());
     }
 
     private void handleEvent1() {
-        System.out.println("Receive Buyer &amp; Seller Info triggered.");
+        System.out.println("Receive Client Query triggered.");
     }
 
     private void handleEvent2() {
-        System.out.println("Draft Sale Deed triggered.");
+        System.out.println("Review Documents & Case History triggered.");
     }
 
     private void handleEvent3() {
-        System.out.println("Review Deed Chain triggered.");
+        System.out.println("Check Land Law Database triggered.");
     }
 
     private void handleEvent4() {
-        System.out.println("Explain Clauses triggered.");
-    }
-
-    private void handleEvent5() {
-        System.out.println("Finalize & Notarize Documents triggered.");
+        System.out.println("Log Consultation in Record triggered.");
     }
 
 }
