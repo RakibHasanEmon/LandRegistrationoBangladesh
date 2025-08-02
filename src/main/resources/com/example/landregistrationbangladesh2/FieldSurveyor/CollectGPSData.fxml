@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.FieldSurveyor.CollectGPSDataController">
+   <children>
+      <Label layoutX="237.0" layoutY="21.0" text="Collect GPS Data">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="66.0" text="Latitude" />
+      <Label layoutX="33.0" layoutY="99.0" text="Longitude" />
+      <Label layoutX="33.0" layoutY="152.0" text="Geo Description" />
+      <Label layoutX="39.0" layoutY="213.0" text="GPS Point List" />
+      <Label layoutX="39.0" layoutY="280.0" text="Map Style" />
+      <Button layoutX="368.0" layoutY="62.0" mnemonicParsing="false" onAction="#captureOA" text="Capture" />
+      <Button layoutX="368.0" layoutY="108.0" mnemonicParsing="false" onAction="#photoChooseOA" text="Photo Choose" />
+      <Button layoutX="368.0" layoutY="148.0" mnemonicParsing="false" onAction="#uploadPhotoOA" text="Upload Photo" />
+      <Button layoutX="368.0" layoutY="197.0" mnemonicParsing="false" onAction="#generateMapOA" text="Generate Map" />
+      <Button layoutX="368.0" layoutY="238.0" mnemonicParsing="false" onAction="#saveMapOA" text="Save Map" />
+      <Button layoutX="368.0" layoutY="276.0" mnemonicParsing="false" onAction="#saveGPSOnAction" text="Save GPS" />
+      <Button layoutX="376.0" layoutY="334.0" mnemonicParsing="false" onAction="#refreshMapOA" text="Refresh Map" />
+      <TextField fx:id="latitudeTF" layoutX="87.0" layoutY="62.0" />
+      <TextField fx:id="longitudeTF" layoutX="87.0" layoutY="95.0" />
+      <TextArea fx:id="geoDescriptionTA" layoutX="141.0" layoutY="130.0" prefHeight="59.0" prefWidth="184.0" />
+      <ComboBox fx:id="mapStyleCB" layoutX="112.0" layoutY="276.0" prefWidth="150.0" />
+      <ListView fx:id="gpsPointListLV" layoutX="128.0" layoutY="197.0" prefHeight="59.0" prefWidth="205.0" />
+   </children>
+</AnchorPane>

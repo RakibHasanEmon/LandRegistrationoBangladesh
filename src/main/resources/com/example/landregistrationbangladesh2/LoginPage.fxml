@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.LoginPageController">
+   <children>
+      <Label layoutX="225.0" layoutY="14.0" text="Login Page">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="92.0" text="User ID" />
+      <Label layoutX="144.0" layoutY="146.0" text="Password" />
+      <TextField fx:id="userIdTF" layoutX="205.0" layoutY="88.0" />
+      <Button layoutX="254.0" layoutY="200.0" mnemonicParsing="false" onAction="#loginOA" text="Login" />
+      <Button layoutX="409.0" layoutY="308.0" mnemonicParsing="false" onAction="#createNewAccountOA" text="Create New Account" />
+      <PasswordField fx:id="passwordPF" layoutX="212.0" layoutY="142.0" />
+   </children>
+</AnchorPane>

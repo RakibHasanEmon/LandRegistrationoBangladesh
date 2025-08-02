@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.FieldSurveyor.SubmitSurveyReportController">
+   <children>
+      <Label layoutX="233.0" layoutY="22.0" text="Submit Survey Report">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="70.0" text="Report ID" />
+      <Label layoutX="65.0" layoutY="112.0" text="Prepared By" />
+      <Label layoutX="65.0" layoutY="147.0" text="Submission date " />
+      <Label layoutX="65.0" layoutY="221.0" text="Report Summary" />
+      <TextField fx:id="reportIdTF" layoutX="129.0" layoutY="66.0" />
+      <TextField fx:id="preparedByTF" layoutX="137.0" layoutY="108.0" />
+      <TextArea fx:id="reportSummaryTA" layoutX="171.0" layoutY="200.0" prefHeight="81.0" prefWidth="197.0" />
+      <DatePicker fx:id="submissionDateDP" layoutX="155.0" layoutY="143.0" />
+      <Label fx:id="areaValueDifferenceTF" layoutX="91.0" layoutY="320.0" text="Area Value Difference" />
+      <Button layoutX="368.0" layoutY="66.0" mnemonicParsing="false" onAction="#openSubmitsyrveyFormOA" text="Open submit Survey Form" />
+      <Label layoutX="368.0" layoutY="139.0" text="Survey Findings" />
+      <TextArea fx:id="surveyFindingsTA" layoutX="451.0" layoutY="115.0" prefHeight="81.0" prefWidth="197.0" />
+      <Label fx:id="reportStatusTF" layoutX="340.0" layoutY="329.0" text="report Status " />
+      <Label fx:id="submissionSuccessMessageTF" layoutX="463.0" layoutY="329.0" text="Submission Success Massage " />
+      <Button layoutX="452.0" layoutY="241.0" mnemonicParsing="false" onAction="#finalSubmitButtonOA" text="Final submit Button" />
+      <Label fx:id="fileValidationTF" layoutX="256.0" layoutY="303.0" text="File Validation" />
+   </children>
+</AnchorPane>

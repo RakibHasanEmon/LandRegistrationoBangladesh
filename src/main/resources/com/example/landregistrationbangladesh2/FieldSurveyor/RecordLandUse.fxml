@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.FieldSurveyor.RecordLandUseController">
+   <children>
+      <Label layoutX="248.0" layoutY="21.0" text="Record Land Use">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="94.0" text="Land Use Type" />
+      <Label layoutX="111.0" layoutY="162.0" text="Physical Observation" />
+      <Label layoutX="111.0" layoutY="232.0" text="Soil Type" />
+      <Button layoutX="377.0" layoutY="310.0" mnemonicParsing="false" onAction="#saveObservationOA" text="Save Observation" />
+      <TextField fx:id="landUseTypeTF" layoutX="203.0" layoutY="90.0" />
+      <TextField fx:id="physicalObservationTF" layoutX="228.0" layoutY="158.0" />
+      <TextArea fx:id="soilTypeTA" layoutX="175.0" layoutY="210.0" prefHeight="82.0" prefWidth="213.0" />
+   </children>
+</AnchorPane>

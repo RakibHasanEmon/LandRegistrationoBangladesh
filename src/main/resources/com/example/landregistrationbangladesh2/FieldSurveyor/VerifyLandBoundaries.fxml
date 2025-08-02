@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.FieldSurveyor.VerifyLandBoundariesController">
+   <children>
+      <Label layoutX="209.0" layoutY="14.0" text="Verify Land Boundaries">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="81.0" text="Neighbor Name" />
+      <Label layoutX="91.0" layoutY="135.0" text="Shared Boundary Length" />
+      <Label layoutX="84.0" layoutY="183.0" text="Adjoining Owner Status" />
+      <Label layoutX="84.0" layoutY="250.0" text="Verification Notes" />
+      <Button layoutX="325.0" layoutY="316.0" mnemonicParsing="false" onAction="#initiateVerificationOA" text="Initiate Verification" />
+      <TextField fx:id="neighborNameTF" layoutX="187.0" layoutY="77.0" />
+      <TextField fx:id="sharedBoundaryLengthTF" layoutX="226.0" layoutY="131.0" />
+      <TextField fx:id="adjoiningOwnerStatusTF" layoutX="226.0" layoutY="179.0" />
+      <TextArea fx:id="verificationNotesTA" layoutX="205.0" layoutY="216.0" prefHeight="79.0" prefWidth="195.0" />
+      <Label layoutX="386.0" layoutY="81.0" text="Signature" />
+      <Canvas fx:id="SignatureCanvus" height="92.0" layoutX="441.0" layoutY="56.0" width="177.0" />
+      <Button layoutX="84.0" layoutY="329.0" mnemonicParsing="false" onAction="#fetchRegistrationData" text="Fetch Registration Data" />
+   </children>
+</AnchorPane>

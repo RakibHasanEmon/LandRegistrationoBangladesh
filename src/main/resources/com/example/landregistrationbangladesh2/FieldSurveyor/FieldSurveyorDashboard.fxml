@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:id="fieldServeyorDashboardBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.FieldSurveyor.FieldSurveyorDashboardController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="150.0" style="-fx-background-color: rgba(100,100,100,1);" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#scheduleSurveyOA" prefWidth="150.0" text="Schedule Survey" />
+            <Button mnemonicParsing="false" onAction="#collectGPSDataOA" prefWidth="150.0" text="Collect GPS Data" />
+            <Button mnemonicParsing="false" onAction="#recordLandUseOA" prefWidth="150.0" text="Record Land Use" />
+            <Button mnemonicParsing="false" onAction="#recordBoundaryMarker" prefWidth="150.0" text="Record Boundary Marker" />
+            <Button mnemonicParsing="false" onAction="#verifyLandBoundariesOA" prefWidth="150.0" text="Verify Land Boundaries" />
+            <Button mnemonicParsing="false" onAction="#publicHearingOA" prefWidth="150.0" text="Public Hearing" />
+            <Button mnemonicParsing="false" onAction="#updateSurveyOA" prefWidth="150.0" text="Update Survey" />
+            <Button mnemonicParsing="false" onAction="#submitSurveyReportOA" prefWidth="150.0" text="Submit Survey Report" />
+            <Button mnemonicParsing="false" onAction="#logoutOA" prefWidth="150.0" text="Logout" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="190.0" layoutY="5.0" text="Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="infoTA" layoutX="25.0" layoutY="65.0" prefHeight="186.0" prefWidth="399.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

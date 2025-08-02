@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.FieldSurveyor.ScheduleSurveyController">
+   <children>
+      <Label layoutX="249.0" layoutY="4.0" text="Schedule Survey">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="88.0" text="View List" />
+      <Label layoutX="69.0" layoutY="135.0" text="Owner Name" />
+      <Label layoutX="69.0" layoutY="192.0" text="Location" />
+      <Label layoutX="69.0" layoutY="251.0" text="Survey Date" />
+      <Button layoutX="430.0" layoutY="239.0" mnemonicParsing="false" onAction="#confirmAppoinmentOA" text="Confirm Appoinment" />
+      <Button layoutX="430.0" layoutY="298.0" mnemonicParsing="false" onAction="#updateOA" text="Update" />
+      <ComboBox fx:id="viewListCB" layoutX="132.0" layoutY="84.0" prefWidth="150.0" />
+      <TextField fx:id="ownerNameTF" layoutX="151.0" layoutY="131.0" />
+      <TextField fx:id="locationTF" layoutX="116.0" layoutY="188.0" />
+      <DatePicker fx:id="surveyDateDP" layoutX="139.0" layoutY="252.0" />
+   </children>
+</AnchorPane>
