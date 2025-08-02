@@ -25,7 +25,11 @@
       <TextField fx:id="sharedBoundaryLengthTF" layoutX="226.0" layoutY="131.0" />
       <TextField fx:id="adjoiningOwnerStatusTF" layoutX="226.0" layoutY="179.0" />
       <TextArea fx:id="verificationNotesTA" layoutX="205.0" layoutY="216.0" prefHeight="79.0" prefWidth="195.0" />
-      <Label layoutX="386.0" layoutY="81.0" text="Signature" />
+      <Label layoutX="386.0" layoutY="81.0" text="Signature">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
       <Canvas fx:id="SignatureCanvus" height="92.0" layoutX="441.0" layoutY="56.0" width="177.0" />
       <Button layoutX="84.0" layoutY="329.0" mnemonicParsing="false" onAction="#fetchRegistrationData" text="Fetch Registration Data" />
    </children>
