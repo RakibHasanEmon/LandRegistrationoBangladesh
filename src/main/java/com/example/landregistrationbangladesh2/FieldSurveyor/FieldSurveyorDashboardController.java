@@ -1,8 +1,12 @@
 package com.example.landregistrationbangladesh2.FieldSurveyor;
 
 import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+import java.util.EventObject;
 
 public class FieldSurveyorDashboardController
 {
@@ -37,10 +41,13 @@ public class FieldSurveyorDashboardController
 
     @javafx.fxml.FXML
     public void recordLandUseOA(ActionEvent actionEvent) {
+        System.out.println("record land use");
+        EventObject event;
     }
 
     @javafx.fxml.FXML
     public void verifyLandBoundariesOA(ActionEvent actionEvent) {
+        System .out.println("verify boundaries clicked");
     }
 
     @javafx.fxml.FXML
@@ -49,5 +56,7 @@ public class FieldSurveyorDashboardController
 
     @javafx.fxml.FXML
     public void submitSurveyReportOA(ActionEvent actionEvent) {
+
+        System.out.println("submit survey report");
     }
 }

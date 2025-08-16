@@ -22,17 +22,26 @@ public class RecordBoundaryMarkerController
 
     @javafx.fxml.FXML
     public void refreshMapButtonOA(ActionEvent actionEvent) {
+        System.out.println("refres Map Button");
     }
 
     @javafx.fxml.FXML
     public void recordMarkerOA(ActionEvent actionEvent) {
+        System.out.println("record Marker");
     }
 
     @javafx.fxml.FXML
     public void addMarkerOA(ActionEvent actionEvent) {
+        String markerId = markerIdTF.getText();
+        String type = markerTypeTF.getText();
+        String location = markerLocationCB.getValue();
+
+        System.out.println("marker added:" + markerId + ","+type + ","+location);
+
     }
 
     @javafx.fxml.FXML
     public void uploadPhotoOA(ActionEvent actionEvent) {
+        System.out.println("Upload photo clicked");
     }
 }
