@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="LandBroker.ClientLegalEducationController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    
+    <Label text="ClientLegalEducation" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <Button text="Organize Legal Awareness Session" fx:id="btnEvent1"/>
+    <Button text="Prepare Informative Material" fx:id="btnEvent2"/>
+    <Button text="Distribute Flyers" fx:id="btnEvent3"/>
+    <Button text="Answer FAQs" fx:id="btnEvent4"/>
+    <Button text="Update Clients on Legal Changes" fx:id="btnEvent5"/>
+</VBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="LandBroker.LegalDocumentPreparationController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    
+    <Label text="LegalDocumentPreparation" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <Button text="Receive Buyer &amp; Seller Info" fx:id="btnEvent1"/>
+    <Button text="Draft Sale Deed" fx:id="btnEvent2"/>
+    <Button text="Review Deed Chain" fx:id="btnEvent3"/>
+    <Button text="Explain Clauses" fx:id="btnEvent4"/>
+    <Button text="Finalize &amp; Notarize Documents" fx:id="btnEvent5"/>
+</VBox>
