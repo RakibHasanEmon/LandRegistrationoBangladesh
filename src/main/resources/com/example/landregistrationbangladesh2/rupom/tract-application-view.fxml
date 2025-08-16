@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="524.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.controllerClass.TractApplicationViewController">
+   <children>
+      <TableView fx:id="applicationTableView" layoutY="188.0" prefHeight="251.0" prefWidth="715.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="127.1999568939209" text="Registration ID " />
+          <TableColumn fx:id="nameCol" prefWidth="149.5999755859375" text="Owner Name " />
+            <TableColumn fx:id="addressCol" prefWidth="115.20001220703125" text="Address" />
+            <TableColumn fx:id="dobCol" prefWidth="97.5999755859375" text="Date of Birth" />
+            <TableColumn fx:id="statusCol" prefWidth="117.60000610351562" text="Application Date" />
+            <TableColumn fx:id="statusCol1" prefWidth="108.00006103515625" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchId" layoutX="111.0" layoutY="43.0" />
+      <Text layoutX="22.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Application ID :" />
+      <Button layoutX="199.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="26.0" prefWidth="61.0" text="Search" />
+      <Text fx:id="errorTextfield" layoutX="22.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error Text" wrappingWidth="213.33673858642578" />
+      <Text layoutX="52.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="124.53675079345703" />
+      <Button layoutX="533.0" layoutY="473.0" mnemonicParsing="false" onAction="#hendelContactOfficer" prefHeight="26.0" prefWidth="150.0" text=" Contact Officer" />
+      <Button layoutX="26.0" layoutY="474.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <Text layoutX="21.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="186.93677520751953" />
+   </children>
+</AnchorPane>

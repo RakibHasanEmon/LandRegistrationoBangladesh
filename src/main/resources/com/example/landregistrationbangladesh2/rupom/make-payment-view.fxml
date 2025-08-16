@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="440.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.controllerClass.MakePaymentViewController">
+   <children>
+      <TableView fx:id="paymentTableView" layoutX="122.0" layoutY="8.0" prefHeight="200.0" prefWidth="396.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="96.800048828125" text="Application ID" />
+          <TableColumn fx:id="nameCol" prefWidth="88.0" text="Name " />
+            <TableColumn fx:id="amountCol" prefWidth="98.39996337890625" text="Ammount " />
+            <TableColumn fx:id="dateCol" prefWidth="107.20001220703125" text="Date of Payment" />
+        </columns>
+      </TableView>
+      <Button layoutX="50.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+      <Button layoutX="434.0" layoutY="248.0" mnemonicParsing="false" onAction="#handlePaidButton" prefHeight="26.0" prefWidth="83.0" text="Paid" />
+      <Text layoutX="173.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" />
+      <TextField fx:id="searchId" layoutX="215.0" layoutY="252.0" />
+      <Text fx:id="errorText" layoutX="122.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="102.93670654296875" />
+   </children>
+</AnchorPane>

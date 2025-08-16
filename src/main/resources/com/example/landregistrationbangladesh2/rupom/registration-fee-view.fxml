@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.controllerClass.RegistrationFeeViewController">
+   <children>
+      <AnchorPane layoutX="6.0" prefHeight="492.0" prefWidth="696.0">
+         <children>
+            <TextField fx:id="idTextfield" layoutX="336.0" layoutY="76.0" />
+            <TextField fx:id="regFee" layoutX="336.0" layoutY="118.0" />
+            <TextField fx:id="name" layoutX="336.0" layoutY="159.0" />
+            <TextField fx:id="mobile" layoutX="336.0" layoutY="197.0" />
+            <Text layoutX="193.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Application ID :" />
+            <Text layoutX="192.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Fee  :" />
+            <Text layoutX="190.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Payer :" />
+            <Text layoutX="193.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile:" />
+            <Button layoutX="376.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleConfirmButton" text="Confirm payment" />
+            <Button layoutX="41.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+            <Text fx:id="errorText" layoutX="186.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="149.60000000000014" />
+            <ComboBox fx:id="paymentMethodComboBox" layoutX="347.0" layoutY="244.0" prefHeight="26.0" prefWidth="138.0" promptText="Payment Method" />
+            <DatePicker fx:id="dobDatepicker" layoutX="186.0" layoutY="245.0" prefHeight="26.0" prefWidth="150.0" promptText="Payment Date" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
