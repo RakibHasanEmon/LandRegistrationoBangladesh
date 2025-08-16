@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.landregistrationbangladesh2.controllerClass.CreateNewAccountViewController">
+   <children>
+      <AnchorPane layoutX="7.0" prefHeight="490.0" prefWidth="698.0">
+         <children>
+            <TextField fx:id="idTextfield" layoutX="168.0" layoutY="45.0" />
+            <TextField fx:id="nameTextfield" layoutX="168.0" layoutY="88.0" />
+            <TextField fx:id="addressTextfield" layoutX="168.0" layoutY="128.0" />
+            <TextField fx:id="mobileTextfield" layoutX="168.0" layoutY="204.0" />
+            <Text layoutX="77.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name :" wrappingWidth="65.16366577148438" />
+            <Text layoutX="22.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="77.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House Address :" />
+            <Text layoutX="75.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile:" />
+            <DatePicker fx:id="dobDatepicker" layoutX="168.0" layoutY="168.0" prefHeight="26.0" prefWidth="150.0" promptText="DoB" />
+            <Button layoutX="482.0" layoutY="365.0" mnemonicParsing="false" onAction="#handelRegisterbutton" prefHeight="47.0" prefWidth="124.0" text="Create" />
+            <Button layoutX="36.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+            <Text layoutX="72.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land Location :" wrappingWidth="85.38867187499994" />
+            <TextField layoutX="168.0" layoutY="260.0" />
+            <Text layoutX="73.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Land Measure :" wrappingWidth="85.38867187499994" />
+            <TextField layoutX="168.0" layoutY="305.0" />
+            <Text layoutX="75.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile:" />
+            <Text layoutX="343.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password :" wrappingWidth="104.5886840820312" />
+            <TextField layoutX="456.0" layoutY="87.0" />
+            <Text layoutX="343.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Password :" wrappingWidth="96.5886840820312" />
+            <TextField layoutX="456.0" layoutY="45.0" />
+            <Label fx:id="errorText" layoutX="72.0" layoutY="365.0" prefHeight="47.0" prefWidth="239.0" text="Text" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
